@@ -1,0 +1,166 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+	{
+		"path": "pages/tabBar/index/index",
+		"style": {
+			"navigationBarTextStyle":"black",
+			"enablePullDownRefresh": true,
+			"onReachBottomDistance":50,
+			"app-plus":{
+				"titleNView":false,
+				"softinputNavBar":"none"
+				// "subNVues":[{
+				// 	"id":"indexTitleNvue",
+				// 	"path":"pages/tabBar/index/subNvue/indexTitleNvue",
+				// 	"type":"navigationBar"
+				// }]
+			}
+		}
+	}, 
+		{
+			"path": "pages/public/login/login",
+			"style": {
+				"navigationBarTitleText": "登录",
+				"navigationBarBackgroundColor": "#F06C7A",
+				"navigationBarTextStyle": "white",
+				"app-plus": {
+					"bounce": "none", //关闭窗口回弹效果
+					"softinputNavBar": "none"
+				}
+			}
+
+		},
+		
+		{
+			"path": "pages/study/study",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/tabBar/my/my",
+			"style": {
+				"transparentTitle":"always",
+				"enablePullDownRefresh": true,
+				"backgroundTextStyle": "light",
+				"navigationBarBackgroundColor": "#F06C7A",
+				"backgroundColorTop": "#F06C7A",
+				"navigationBarTextStyle": "white"
+				// "app-plus": {
+				// 	"titleNView": false,
+				// 	"subNVues": [{
+				// 		"id": "userTitleNvue",
+				// 		"path":"pages/my/subNvue/userTitleNvue", // 页面路径 
+				// 		"type": "navigationBar"
+				// 	}]
+				// }
+
+			}
+
+		}
+	    ,{
+            "path" : "pages/tabBar/workbench/workbench",
+            "style": {
+            	"navigationBarTextStyle":"black",
+            	"enablePullDownRefresh": true,
+            	"onReachBottomDistance":50,
+            	"app-plus":{
+         		"titleNView":false,
+        		"softinputNavBar":"none"
+       		// "subNVues":[{
+       		// 	"id":"indexTitleNvue",
+       		// 	"path":"pages/tabBar/index/subNvue/indexTitleNvue",
+       		// 	"type":"navigationBar"
+       		// }]
+        	}
+       }
+            
+        }
+        ,{
+            "path" : "pages/tabBar/dataArea/dataArea",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationStyle":"custom"
+            }
+            
+        }
+        ,{
+            "path" : "pages/tabBar/workbench/workForm/workForm",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/tabBar/index/music/music",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": true,
+				"onReachBottomDistance": true
+            }
+            
+        }
+        ,{
+            "path" : "pages/tabBar/index/video/video",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"transparentTitle":"always"
+            }
+            
+        }
+        ,{
+            "path" : "pages/tabBar/dataArea/test/test",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#333333",
+		"selectedColor": "#f06c7a",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+				"pagePath": "pages/tabBar/index/index",
+				"iconPath": "static/img/tabBar/home.png",
+				"selectedIconPath": "static/img/tabBar/home-on.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/tabBar/workbench/workbench",
+				"iconPath": "static/img/tabBar/category.png",
+				"selectedIconPath": "static/img/tabBar/category-on.png",
+				"text": "工作区"
+			},
+			{
+				"pagePath": "pages/tabBar/dataArea/dataArea",
+				"iconPath": "static/img/tabBar/cart.png",
+				"selectedIconPath": "static/img/tabBar/cart-on.png",
+				"text": "数据区"
+			},
+			{
+				"pagePath": "pages/tabBar/my/my",
+				"iconPath": "static/img/tabBar/user.png",
+				"selectedIconPath": "static/img/tabBar/user-on.png",
+				"text": "我的"
+			}
+		]
+	}
+}
